@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="25.505371in"
+   height="66.084793in"
+   viewBox="0 0 2295.4834 5947.6314"
+   id="svg5525"
+   version="1.1"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="InlayAndOutset.svg">
+  <defs
+     id="defs5527" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.5"
+     inkscape:cx="1523.958"
+     inkscape:cy="515.54927"
+     inkscape:document-units="in"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="in"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="2560"
+     inkscape:window-height="1537"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:lockguides="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:document-rotation="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid6628"
+       units="in"
+       spacingx="5.625"
+       spacingy="5.625"
+       empspacing="16"
+       empcolor="#6f3f65"
+       empopacity="0.25098039"
+       dotted="false"
+       originx="180.00002"
+       originy="5406.9071" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5530">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(180,-961.36847)">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3508"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="matrix(0.9375,0,0,0.9375,0,7077.2663)"><flowRegion
+         id="flowRegion3510"><rect
+           id="rect3512"
+           width="2400"
+           height="1056"
+           x="-192"
+           y="-1056" /></flowRegion><flowPara
+         id="flowPara3550">(Basically anytime you are cutting something out of a piece then the vectors that will be cut must be part of</flowPara><flowPara
+         id="flowPara3552">a single entity and you use Path-&gt; Offset.</flowPara><flowPara
+         id="flowPara3554" /><flowPara
+         id="flowPara3556">Alternatively, instead of Outset you can make the stroke style 0.00984252&quot; and then choose Path-&gt;Stroke to Path.  </flowPara><flowPara
+         id="flowPara3518">Then Path -&gt; Break Apart.  Remove the fill and change the stroke color.  Set the stroke size to be 0.002&quot;.  Delete the interior paths associated with the original strokes.  But I've never really done this.)</flowPara></flowRoot>
+    <flowRoot
+       transform="matrix(0.9375,0,0,0.9375,45.63001,1945.8304)"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot931"
+       xml:space="preserve"><flowRegion
+         id="flowRegion895"><rect
+           y="-1056"
+           x="-192"
+           height="1056"
+           width="2400"
+           id="rect893" /></flowRegion><flowPara
+         id="flowPara929">(tl;dr)  In inkscape, the Path-&gt;Outset operation accounts for the kerf of the laser.  If you have one part totally contained within the other (and not just bordering) then you need to subtract the contained part so that all vectors are within a single object.  (You cannot simply combine them).  See below for full explanation and pretty pictures.</flowPara><flowPara
+         id="flowPara1328" /><flowPara
+         id="flowPara1330">The kerf of the laser is 0.5mm or 0.019685&quot;.  One half of that is 0.25mm or 0.00984252&quot;.</flowPara><flowPara
+         id="flowPara1324" /><flowPara
+         id="flowPara1326">There are two cases to consider.</flowPara><flowPara
+         id="flowPara1085" /><flowPara
+         id="flowPara1087">1/  When an object is fully encolosed within another.  We call the larger object the <flowSpan
+   style="font-style:italic"
+   id="flowSpan95">enclosure</flowSpan> and the smaller object the <flowSpan
+   style="font-style:italic"
+   id="flowSpan97">small</flowSpan>.  Here is an example.</flowPara><flowPara
+         id="flowPara99">  </flowPara></flowRoot>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.45;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+       id="rect1089"
+       width="360"
+       height="360"
+       x="509.65854"
+       y="1413.2688"
+       ry="7.3828125" />
+    <path
+       sodipodi:type="star"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.45;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+       id="path1091"
+       sodipodi:sides="5"
+       sodipodi:cx="1244.6586"
+       sodipodi:cy="1600.7688"
+       sodipodi:r1="127.27921"
+       sodipodi:r2="50.91169"
+       sodipodi:arg1="-0.78539816"
+       sodipodi:arg2="-0.15707963"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 1334.6586,1510.7688 -39.7151,82.0357 63.1217,65.7479 -90.2932,-12.421 -43.0243,80.3496 -16.0891,-89.7122 -89.7122,-16.0891 80.3495,-43.0243 -12.4209,-90.2932 65.7479,63.1217 z"
+       inkscape:transform-center-x="6.1527931"
+       inkscape:transform-center-y="6.1527931" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1103"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="matrix(0.9375,0,0,0.9375,45.63001,2779.2679)"><flowRegion
+         id="flowRegion1095"><rect
+           id="rect1093"
+           width="2400"
+           height="1056"
+           x="-192"
+           y="-1056" /></flowRegion><flowPara
+         id="flowPara1101">The rounded rectangle is the enclosure and the star is the small object.  </flowPara><flowPara
+         id="flowPara1110" /><flowPara
+         id="flowPara1112">If you were to cut along the lines of the object then you would result in a star which is too small by the kerf size of the layer.  You lose 1/2 of kerf in the star shape when cutting the small and 1/2 of the kerf in the enclosure when cutting the star shape to the.   It would look like this - note the white around the star when you zoom in.  This is what is lost to the laser:</flowPara><flowPara
+         id="flowPara1114" /></flowRoot>
+    <path
+       style="fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0.45;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+       d="m 514.80652,2087.256 c -4.10592,0.092 -7.29471,4.0966 -6.7749,8.1241 0.006,114.8657 -0.0122,229.7318 0.009,344.5974 0.0918,4.106 4.09659,7.2948 8.12409,6.7749 114.86578,-0.01 229.73188,0.012 344.59747,-0.01 4.10592,-0.092 7.29471,-4.0966 6.7749,-8.124 -0.006,-114.8658 0.0122,-229.7319 -0.009,-344.5975 -0.0918,-4.1059 -4.0966,-7.2947 -8.12409,-6.7748 -114.86578,0.01 -229.73188,-0.012 -344.59747,0.01 z m 115.00122,65.4401 c 22.01294,21.134 44.02588,42.268 66.03882,63.4021 27.68064,-13.401 55.36143,-26.8016 83.04199,-40.2027 -13.4011,27.6806 -26.80172,55.3613 -40.20264,83.042 21.29891,22.1844 42.59724,44.3693 63.89649,66.5533 -30.46758,-4.1909 -60.93506,-8.3826 -91.40259,-12.5738 -14.51798,27.1111 -29.03471,54.2229 -43.55346,81.3336 -5.42487,-30.2708 -10.85489,-60.5407 -16.28174,-90.8112 -30.27107,-5.4274 -60.54157,-10.8581 -90.81299,-16.2835 27.11071,-14.5188 54.22249,-29.0355 81.33361,-43.5535 -4.19038,-30.4663 -8.38313,-60.9324 -12.57202,-91.3989 0.17152,0.1642 0.34302,0.3283 0.51453,0.4926 z"
+       id="rect1116"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.45;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+       d="m 642.94531,2243.8164 c -1.44008,1.6534 -3.99914,2.2878 -5.8719,3.5331 -24.47043,13.1036 -48.94087,26.2071 -73.4113,39.3107 29.52612,5.2938 59.05163,10.5911 88.57812,15.8828 5.29171,29.5265 10.58897,59.052 15.88282,88.5781 14.15993,-26.4448 28.32166,-52.8886 42.48047,-79.334 29.71603,4.0893 59.43231,8.177 89.14843,12.2656 -20.77334,-21.6387 -41.54744,-43.2768 -62.32031,-64.916 13.06984,-26.9989 26.1407,-53.9973 39.21094,-80.9961 -26.99874,13.0703 -53.99717,26.1411 -80.9961,39.211 -21.63922,-20.7729 -43.27725,-41.547 -64.91601,-62.3204 4.07161,29.5951 8.14323,59.1902 12.21484,88.7852 z"
+       id="path1118"
+       inkscape:connector-curvature="0" />
+    <flowRoot
+       transform="matrix(0.9375,0,0,0.9375,45.63001,3553.4935)"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot1152"
+       xml:space="preserve"><flowRegion
+         id="flowRegion1142"><rect
+           y="-1056"
+           x="-192"
+           height="1056"
+           width="2400"
+           id="rect1140" /></flowRegion><flowPara
+         id="flowPara1150">Instead you need to take the two shapes and subtract the interior one (the smaller) from the enclosure.  Then you must outset the combined vectors to cut out the full enclosure.  This will shrink the interior star which results in a smaller star but this smaller star is actually the same sized star after the laser kerf is taken into account.  It also grows the exterior vectors to make the bounding part of the enclosure shape larger.  Again, it won't actually be larger after the laser kerf is taken into account.  Shown below is the black original and then the outset in green. </flowPara></flowRoot>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.45;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+       d="m 477.17652,2817.3946 c -4.09008,0 -7.38281,3.2927 -7.38281,7.3828 v 345.2343 c 0,4.0902 3.29273,7.3829 7.38281,7.3829 h 345.23437 c 4.09008,0 7.38282,-3.2927 7.38282,-7.3829 v -345.2343 c 0,-4.0901 -3.29274,-7.3828 -7.38282,-7.3828 z m 114.83276,66.5936 65.74768,63.122 82.03675,-39.7156 -39.71558,82.0367 63.12195,65.7477 -90.29297,-12.4219 -43.02429,80.3504 -16.08948,-89.7126 -89.71253,-16.0894 80.34852,-43.0244 z"
+       id="rect1159"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#00ff00;stroke-width:0.45;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+       d="m 476.79016,2817.1566 c -4.23735,0.088 -7.69436,4.181 -7.24365,8.3649 0.006,114.9637 -0.0122,229.9278 0.009,344.8913 0.098,4.2316 4.18588,7.6787 8.36495,7.229 114.96372,-0.01 229.92774,0.012 344.89128,-0.01 4.23168,-0.098 7.67872,-4.1858 7.22901,-8.3649 -0.006,-114.9638 0.0122,-229.9277 -0.009,-344.8913 -0.098,-4.2317 -4.18588,-7.6788 -8.36494,-7.229 -114.95885,0.01 -229.91798,-0.012 -344.87664,0.01 z m 180.79469,130.133 c 1.74317,-0.4195 3.62069,-1.697 5.41481,-2.4418 25.41979,-12.3062 50.83958,-24.6124 76.25938,-36.9186 -13.15972,27.1833 -26.32003,54.3663 -39.47937,81.5498 20.91499,21.7864 41.83114,43.5716 62.74658,65.3576 -29.91881,-4.1164 -59.83775,-8.2317 -89.75647,-12.3486 -14.25533,26.6254 -28.5134,53.2494 -42.76978,79.8742 -5.3304,-29.7272 -10.66403,-59.4539 -15.99243,-89.1815 -29.72759,-5.3283 -59.45427,-10.662 -89.18152,-15.9924 26.62426,-14.2564 53.24762,-28.5144 79.87244,-42.7698 -4.11634,-29.9187 -8.23108,-59.8376 -12.34681,-89.7564 21.74439,20.8758 43.48878,41.7516 65.23317,62.6275 z"
+       id="path1169"
+       inkscape:connector-curvature="0" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1177"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.9375,0,0,0.9375,-39.774757,58.540814)"><flowRegion
+         id="flowRegion1179"><rect
+           id="rect1181"
+           width="1632"
+           height="384"
+           x="960"
+           y="3072" /></flowRegion><flowPara
+         id="flowPara1183">Black = Original (smaller subtracted from enclosure)</flowPara><flowPara
+         id="flowPara1187">Green = Outset -- to be cut!</flowPara><flowPara
+         id="flowPara1185" /></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1195"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="matrix(0.9375,0,0,0.9375,45.63001,4324.1023)"><flowRegion
+         id="flowRegion1191"><rect
+           id="rect1189"
+           width="2400"
+           height="1056"
+           x="-192"
+           y="-1056" /></flowRegion><flowPara
+         id="flowPara1193">Now you still need to cut out the smaller shape.  In this example it is the star.  Take just the original star vector with no modifications to begin with.  If you just cut out on those vector lines the kerf of the laser would make the star smaller than you want it.  You must outset again.  This time, since it is not a vector enclosed within a larger one, the outset will actually make the shape larger.  But it won't actually be larger after the kerf of the laser is taken into account.  Shown below is the black original and then the outset in green</flowPara></flowRoot>
+    <path
+       inkscape:transform-center-y="6.1527931"
+       inkscape:transform-center-x="6.1527931"
+       d="m 777.78356,3616.7134 -39.71511,82.0356 63.12173,65.7479 -90.29319,-12.4209 -43.02428,80.3496 -16.08914,-89.7122 -89.7122,-16.0892 80.34955,-43.0242 -12.4209,-90.2932 65.74789,63.1217 z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="false"
+       sodipodi:arg2="-0.15707963"
+       sodipodi:arg1="-0.78539816"
+       sodipodi:r2="50.91169"
+       sodipodi:r1="127.27921"
+       sodipodi:cy="3706.7134"
+       sodipodi:cx="687.78357"
+       sodipodi:sides="5"
+       id="path1197"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.45;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+       sodipodi:type="star" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#00ff00;stroke-width:0.45;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+       d="m 629.73828,3593.3427 c 4.13216,30.0371 8.26432,60.0742 12.39649,90.1113 -26.95239,14.4325 -53.9055,28.8636 -80.85743,43.2969 30.09357,5.3939 60.18612,10.7934 90.2793,16.1895 5.39605,30.0931 10.79557,60.1857 16.18945,90.2793 14.43331,-26.952 28.86442,-53.9051 43.29688,-80.8575 30.28842,4.1666 60.57677,8.3338 90.86523,12.5 -21.17428,-22.0542 -42.34758,-44.1094 -63.52148,-66.164 13.3223,-27.5182 26.6443,-55.0366 39.9668,-82.5547 -27.51812,13.3225 -55.03648,26.6445 -82.55469,39.9668 -22.05462,-21.1739 -44.10982,-42.3472 -66.16406,-63.5215 0.0345,0.2513 0.069,0.5026 0.10351,0.7539 z"
+       id="path1199"
+       inkscape:connector-curvature="0" />
+    <flowRoot
+       transform="matrix(0.9375,0,0,0.9375,-39.774757,767.85731)"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       id="flowRoot1213"
+       xml:space="preserve"><flowRegion
+         id="flowRegion1205"><rect
+           y="3072"
+           x="960"
+           height="384"
+           width="1632"
+           id="rect1203" /></flowRegion><flowPara
+         id="flowPara1207">Black = Just the smaller vector with no change</flowPara><flowPara
+         id="flowPara1209">Green = Outset -- to be cut!</flowPara><flowPara
+         id="flowPara1211" /></flowRoot>
+    <flowRoot
+       transform="matrix(0.9375,0,0,0.9375,45.63001,4896.8588)"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot1221"
+       xml:space="preserve"><flowRegion
+         id="flowRegion1217"><rect
+           y="-1056"
+           x="-192"
+           height="1056"
+           width="2400"
+           id="rect1215" /></flowRegion><flowPara
+         id="flowPara1219">If you combine the result into a single view and show the enclosure as red and the smaller object as blue you get the following.  Note that this time there is white inbetween the blue and red where the star is but the white actually shows the overlap between the two objects which will not exist after the laser vaporizes the kerf.</flowPara></flowRoot>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.45;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+       d="m 503.53088,4045.3829 c -4.23735,0.088 -7.69436,4.181 -7.24365,8.365 0.006,114.9637 -0.0122,229.9277 0.009,344.8912 0.098,4.2317 4.18588,7.6788 8.36495,7.2291 114.96372,-0.01 229.92774,0.012 344.89128,-0.01 4.23168,-0.098 7.67872,-4.1859 7.22901,-8.365 -0.006,-114.9637 0.0122,-229.9277 -0.009,-344.8912 -0.098,-4.2317 -4.18588,-7.6788 -8.36494,-7.2291 -114.95885,0.01 -229.91798,-0.012 -344.87664,0.01 z m 180.79469,130.1331 c 1.74317,-0.4196 3.62069,-1.697 5.41481,-2.4418 25.41979,-12.3062 50.83958,-24.6124 76.25938,-36.9186 -13.15972,27.1833 -26.32003,54.3663 -39.47937,81.5497 20.91499,21.7864 41.83114,43.5717 62.74658,65.3577 -29.91881,-4.1164 -59.83775,-8.2317 -89.75647,-12.3487 -14.25533,26.6255 -28.5134,53.2495 -42.76978,79.8743 -5.3304,-29.7272 -10.66403,-59.4539 -15.99243,-89.1815 -29.72759,-5.3285 -59.45427,-10.6621 -89.18152,-15.9924 26.62426,-14.2564 53.24762,-28.5145 79.87244,-42.7698 -4.11634,-29.9187 -8.23108,-59.8377 -12.34681,-89.7565 21.74439,20.8758 43.48878,41.7517 65.23317,62.6276 z"
+       id="rect1089-2"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:0.45;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+       d="m 618.48828,4112.2508 c 4.13216,30.0371 8.26432,60.0743 12.39649,90.1114 -26.95239,14.4324 -53.9055,28.8635 -80.85743,43.2968 30.09357,5.3939 60.18612,10.7934 90.2793,16.1895 5.39605,30.0932 10.79557,60.1857 16.18945,90.2793 14.43331,-26.9519 28.86442,-53.905 43.29688,-80.8574 30.28842,4.1666 60.57677,8.3337 90.86523,12.5 -21.17428,-22.0543 -42.34758,-44.1095 -63.52148,-66.1641 13.3223,-27.5182 26.6443,-55.0366 39.9668,-82.5547 -27.51812,13.3225 -55.03648,26.6445 -82.55469,39.9668 -22.05462,-21.1739 -44.10982,-42.3472 -66.16406,-63.5215 0.0345,0.2513 0.069,0.5026 0.10351,0.7539 z"
+       id="path1246"
+       inkscape:connector-curvature="0" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1280"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="matrix(0.9375,0,0,0.9375,45.63001,5483.0179)"><flowRegion
+         id="flowRegion1272"><rect
+           id="rect1270"
+           width="2400"
+           height="1056"
+           x="-192"
+           y="-1056" /></flowRegion><flowPara
+         id="flowPara1278">2/ When two objects are next to each other.  Consider the Following.</flowPara></flowRoot>
+    <path
+       style="fill:#ffeeaa;fill-opacity:1;stroke:#000000;stroke-width:0.45;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+       d="m 367.38281,4589.5332 c -4.09008,0 -7.38281,3.2927 -7.38281,7.3828 v 345.2344 c 0,4.0901 3.29273,7.3828 7.38281,7.3828 h 345.23438 c 4.09008,0 7.38281,-3.2927 7.38281,-7.3828 v -115.1825 l -9.36218,1.6791 -16.08948,89.7124 -43.0243,-80.3503 -90.29297,12.4219 63.12195,-65.7495 -39.71557,-82.0349 82.03492,39.7156 L 720,4691.164 v -94.248 c 0,-4.0901 -3.29273,-7.3828 -7.38281,-7.3828 z"
+       id="rect1287"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#e3dedb;fill-opacity:1;stroke:#0000ff;stroke-width:0.45;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+       d="m 727.38281,4589.5332 c -4.09008,0 -7.38281,3.2927 -7.38281,7.3828 v 94.248 l -53.32763,51.1982 -82.03492,-39.7156 39.71557,82.0349 -63.12195,65.7495 90.29297,-12.4219 43.0243,80.3503 16.08948,-89.7124 9.36218,-1.6791 v 115.1825 c 0,4.0901 3.29273,7.3828 7.38281,7.3828 h 345.23439 c 4.0901,0 7.3828,-3.2927 7.3828,-7.3828 V 4596.916 c 0,-4.0901 -3.2927,-7.3828 -7.3828,-7.3828 z"
+       id="path1289"
+       inkscape:connector-curvature="0" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1303"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="matrix(0.9375,0,0,0.9375,45.63001,5971.2338)"><flowRegion
+         id="flowRegion1299"><rect
+           id="rect1297"
+           width="2400"
+           height="1056"
+           x="-192"
+           y="-1056" /></flowRegion><flowPara
+         id="flowPara1301">Again - cutting on the line would result in a gap between the two pieces.  The straight vertical lines could be smushed together resulting in an overall shape which was not as wide.  But this won't work for the part in the middle with the diagonal lines.  The horizontal space could be compressed there but the vertical part would not.</flowPara><flowPara
+         id="flowPara1305" /><flowPara
+         id="flowPara1307">Here the solution is outset again.  Just outset each and cut.  The outset version grows the vectors which accounts for the kerf.  No subtraction need occur here because the shapes of the pieces are distinct and not completely contained.</flowPara><flowPara
+         id="flowPara1311" /><flowPara
+         id="flowPara1313">If you combine the resulting outset vectors into a single view and show the yellow left piece as red and the larger right-side piece as blue then you get:    </flowPara><flowPara
+         id="flowPara1309" /></flowRoot>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.45;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+       d="m 366.99609,5493.2812 c -4.26723,0.088 -7.7304,4.2231 -7.25976,8.4305 0.007,114.9476 -0.013,229.8956 0.01,344.843 0.0959,4.2601 4.22762,7.7167 8.43042,7.2441 114.947,-0.01 229.89421,0.01 344.84107,-0.01 4.26238,-0.097 7.71653,-4.2291 7.24609,-8.4324 0,-38.2347 0,-76.4695 0,-114.7043 -3.28425,0.5906 -6.56861,1.1807 -9.85351,1.7676 -5.32621,29.7159 -10.65798,59.4309 -15.98633,89.1465 -14.25108,-26.6147 -28.50396,-53.2285 -42.75391,-79.8438 -29.90679,4.1154 -59.81382,8.229 -89.7207,12.3438 20.90745,-21.7781 41.81568,-43.5555 62.72266,-65.334 -13.15447,-27.1721 -26.30998,-54.3437 -39.46485,-81.5156 27.17192,13.1548 54.34352,26.3103 81.51563,39.4648 17.84735,-17.1344 35.69516,-34.2683 53.54101,-51.4043 -0.0262,-31.7163 0.0523,-63.4363 -0.0391,-95.1504 -0.30973,-4.1067 -4.33965,-7.2987 -8.40112,-6.8574 -114.94243,0.01 -229.88518,-0.013 -344.8274,0.01 z"
+       id="path1315"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:0.45;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:fill markers stroke"
+       d="m 726.99609,5493.2812 c -4.26723,0.088 -7.7304,4.2231 -7.25976,8.4305 0,31.113 0,62.226 0,93.3391 -17.70508,16.9987 -35.41016,33.9974 -53.11524,50.9961 -27.51821,-13.323 -55.03655,-26.6457 -82.55468,-39.9688 13.32312,27.5182 26.6458,55.0365 39.96875,82.5547 -21.17456,22.0553 -42.34851,44.1111 -63.52344,66.166 30.28846,-4.1662 60.57681,-8.3334 90.86523,-12.5 14.43311,26.9524 28.86489,53.9055 43.29883,80.8574 5.39388,-30.0935 10.7934,-60.1861 16.18945,-90.2792 2.95704,-0.53 5.91407,-1.0599 8.8711,-1.5899 0.0262,38.5516 -0.0522,77.1069 0.0391,115.6563 0.31008,4.1053 4.33976,7.3008 8.40112,6.8554 114.947,-0.01 229.89421,0.01 344.84105,-0.01 4.2624,-0.097 7.7165,-4.2291 7.2461,-8.4324 -0.01,-114.9469 0.013,-229.8943 -0.01,-344.841 -0.096,-4.2614 -4.2275,-7.7145 -8.4304,-7.2461 -114.9424,0.01 -229.88515,-0.013 -344.82737,0.01 z"
+       id="path1317"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:9;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 180,6002.3622 H 1530"
+       id="path1401"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:37.5px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375"
+       x="632.48663"
+       y="1603.188"
+       id="text103"><tspan
+         sodipodi:role="line"
+         id="tspan101"
+         x="632.48663"
+         y="1603.188"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.9375">enclosure</tspan></text>
+    <text
+       id="text107"
+       y="1612.2413"
+       x="1203.9458"
+       style="font-style:normal;font-weight:normal;font-size:37.5px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375"
+       xml:space="preserve"><tspan
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.9375"
+         y="1612.2413"
+         x="1203.9458"
+         id="tspan105"
+         sodipodi:role="line">small</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.9375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M -164.19996,6456.7784 H 2095.0064"
+       id="path109" />
+    <flowRoot
+       transform="matrix(0.93750005,0,0,0.93750005,7.6677191,7482.0426)"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot1303-3"
+       xml:space="preserve"><flowRegion
+         id="flowRegion1299-8"><rect
+           y="-1056"
+           x="-192"
+           height="1056"
+           width="2400"
+           id="rect1297-7" /></flowRegion><flowPara
+         id="flowPara1309-6">Settings:</flowPara><flowPara
+         id="flowPara170" /><flowPara
+         id="flowPara176">It does depend on the material and how much work the laser has to do in order to cut through it.</flowPara><flowPara
+         id="flowPara174" /><flowPara
+         id="flowPara172">For some materials, such as 1/8&quot; acrylic, the kerf of the laser is 0.25mm.  </flowPara><flowPara
+         id="flowPara178" /><flowPara
+         id="flowPara180">For a recent test, where I rastered Maple wood (1000x1000, S:15, P: 100, two times) and then inset a piece of 1.5mm walnet veneer, I had to use 0.12mm for the Path -&gt; Outset setting.   (To set the specific outset value for a single operation use Edit-&gt;Preferences-&gt;Behavior-&gt;Steps-&gt;Inset/Outset by.)</flowPara></flowRoot>
+    <path
+       id="path926"
+       d="M -144.375,1115.1185 H 2051.25"
+       style="fill:none;stroke:#ff0000;stroke-width:0.9375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  </g>
+</svg>
